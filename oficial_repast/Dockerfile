@@ -27,6 +27,7 @@ RUN apt update -y && apt upgrade -y git build-essential zlib1g-dev libgtest-dev 
     cd /demo && \
     yes | rm -r /demo/repast.hpc && \
     cd /demo/src/ && \
+    mkdir /demo/src/build && \
     make bugdemo && \
     apt remove -y git build-essential && \
     apt autoremove -y && \
