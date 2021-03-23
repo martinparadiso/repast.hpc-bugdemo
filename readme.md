@@ -14,13 +14,13 @@ tags:
 To run the simulations simply execute:
 
 ```sh
-docker run ghcr.io:martinparadiso/repast.hpc-bugdemo:latest
+docker run ghcr.io/martinparadiso/repast.hpc-bugdemo:latest
 ```
 
 for the *bugged* version, or:
 
 ```sh
-docker run ghcr.io:martinparadiso/repast.hpc-bugdemo-patched:latest
+docker run ghcr.io/martinparadiso/repast.hpc-bugdemo-patched:latest
 ```
 
 for the patched version. The first container should count two times the same

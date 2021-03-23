@@ -23,7 +23,7 @@ jobs:
           context: oficial_repast/
           file: oficial_repast/Dockerfile
           push: true
-          tags: ghcr.io:martinparadiso/repast.hpc-bugdemo:latest
+          tags: ghcr.io/martinparadiso/repast.hpc-bugdemo:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
