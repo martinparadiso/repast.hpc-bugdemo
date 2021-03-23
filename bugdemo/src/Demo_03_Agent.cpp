@@ -19,12 +19,12 @@ void RepastHPCDemoAgent::play(repast::SharedContext<RepastHPCDemoAgent>* context
 	
     // Print the value of the counter, increment it
     std::cout << getId() 
-              << " counter value: "
-              << counter_ << ",";
+              << "@" << repast::RepastProcess::instance()->rank()
+              << ", tick=" << repast::RepastProcess::instance()->getScheduleRunner().currentTick()
+              << ", counter "
+              << counter_ << " -> ";
     counter_ += 1;
-    std::cout << " incremented to "
-              << counter_ << "\n";
-	
+    std::cout << counter_ << "\n";
 }
 
 void RepastHPCDemoAgent::move(repast::SharedDiscreteSpace<RepastHPCDemoAgent, repast::StrictBorders, repast::SimpleAdder<RepastHPCDemoAgent> >* space){
