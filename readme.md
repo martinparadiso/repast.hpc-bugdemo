@@ -6,9 +6,9 @@ version of Repast.HPC and the other a patched version of Repast.HPC, where the
 bug is not present. The Docker images are stored in Github, with the following
 tags:
 
-- `ghcr.io:martinparadiso/repast.hpc-bugdemo`: The demo compiled with the
+- `ghcr.io/martinparadiso/repast.hpc-bugdemo`: The demo compiled with the
   official version of Repast.HPC.
-- `ghcr.io:martinparadiso/repast.hpc-bugdemo-patched`: The demo compiled with
+- `ghcr.io/martinparadiso/repast.hpc-bugdemo-patched`: The demo compiled with
   the patched version of Repast.HPC.
 
 To run the simulations simply execute:
